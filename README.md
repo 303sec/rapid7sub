@@ -15,5 +15,8 @@ Run `msck repair table rapid7_fdns_any` (as query)
 # Usage
 `python3 rapid7sub.py domain.com`
 
+# Contact
+https://twitter.com/mehmetxyele
+
 ### Thanks to
 Alexey Baikov (sysboss)
