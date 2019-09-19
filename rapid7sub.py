@@ -56,6 +56,7 @@ def run_query(query, database, s3_output):
             s3.Bucket(s3_bucket).download_file(s3_key, local_filename)
         except botocore.exceptions.ClientError as e:
             if e.response['Error']['Code'] == "404":
+                pass
             else:
                 raise
 
