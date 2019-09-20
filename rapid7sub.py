@@ -7,14 +7,14 @@ import botocore
 from retrying import retry
 
 # configuration
-awsaccesskeyid="your aws acces key id"
-awssecretaccesskey="your aws secret key"
-region="us-east-2" ## You can change region
-s3_bucket = 'examplebucket'       # S3 Bucket name
+awsaccesskeyid="your aws acces key id" # your aws acces key id
+awssecretaccesskey="your aws secret key" # your aws secret access key
+region="us-east-2" # region of bucket
+s3_bucket = 'examplebucket' # name of bucket
 # configuration
 
-s3_ouput  = 's3://'+ s3_bucket   # S3 Bucket to store results
-database  = 'default'  # The database to which the query belongs
+s3_ouput  = 's3://'+ s3_bucket
+database  = 'default'
 
 # init clients
 athena = boto3.client('athena', region_name=region,aws_access_key_id=awsaccesskeyid,aws_secret_access_key= awssecretaccesskey)
