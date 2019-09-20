@@ -83,6 +83,4 @@ if __name__ == '__main__':
         subdomains.append(y)
         pass
     subdomains = list(dict.fromkeys(subdomains))
-    for x in subdomains:
-        print(x)
-        pass
+    [print(i) for i in subdomains]
