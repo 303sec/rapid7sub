@@ -10,7 +10,7 @@ from retrying import retry
 awsaccesskeyid="your aws acces key id"
 awssecretaccesskey="your aws secret key"
 region="us-east-2" ## You can change region
-s3_bucket = 'xyeleathena'       # S3 Bucket name
+s3_bucket = 'examplebucket'       # S3 Bucket name
 # configuration
 
 s3_ouput  = 's3://'+ s3_bucket   # S3 Bucket to store results
