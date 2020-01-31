@@ -21,10 +21,10 @@ Run that query (https://paste.ubuntu.com/p/hGSGgXb2QP/) <br>
 
 ```
 CREATE EXTERNAL TABLE IF NOT EXISTS rapid7_fdns_any (
-  \`timestamp\` timestamp,
-  \`name\` string,
-  \`type\` string,
-  \`value\` string 
+  `timestamp` timestamp,
+  `name` string,
+  `type` string,
+  `value` string 
 ) PARTITIONED BY (
   date string 
 )
