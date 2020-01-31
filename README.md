@@ -18,6 +18,23 @@ Note: u should pay $0.40 for each query to aws athena (it depends to size of rap
 #### How to create Database (Athena)
 Go https://console.aws.amazon.com/athena/home <br>
 Run that query (https://paste.ubuntu.com/p/hGSGgXb2QP/) <br>
+
+```
+CREATE EXTERNAL TABLE IF NOT EXISTS rapid7_fdns_any (
+  \`timestamp\` timestamp,
+  \`name\` string,
+  \`type\` string,
+  \`value\` string 
+) PARTITIONED BY (
+  date string 
+)
+ROW FORMAT SERDE 'org.apache.hadoop.hive.ql.io.parquet.serde.ParquetHiveSerDe'
+WITH SERDEPROPERTIES (
+  'serialization.format' = '1'
+) LOCATION 's3://rapid7-opendata/fdns/any/v1/'
+TBLPROPERTIES ('has_encrypted_data'='false');
+```
+
 Run `msck repair table rapid7_fdns_any` (as query)
 
 #### The remaining steps are basic. Just create aws api key and configure variables which i specified on python file
