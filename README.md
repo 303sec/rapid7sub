@@ -16,9 +16,9 @@ Note: u should pay $0.40 for each query to aws athena (it depends to size of rap
     cd rapid7sub
     python3 -m pip install -r requirements.txt
 #### How to create Database (Athena)
-Go https://console.aws.amazon.com/athena/home <br>
+Run that queries at Athena Panel (https://console.aws.amazon.com/athena/home) <br>
 
-Query for getting the database
+Query for getting the database from bucket
 ```
 CREATE EXTERNAL TABLE IF NOT EXISTS rapid7_fdns_any (
   `timestamp` timestamp,
@@ -35,7 +35,7 @@ WITH SERDEPROPERTIES (
 TBLPROPERTIES ('has_encrypted_data'='false');
 ```
 
-Run `msck repair table rapid7_fdns_any` (as query)
+Then run `msck repair table rapid7_fdns_any` (ofc as query)
 
 #### The remaining steps are basic. Just create aws api key and configure variables which i specified on python file
 
