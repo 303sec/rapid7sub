@@ -1,7 +1,7 @@
 # Rapid7Sub
 Subdomain enumeration with Rapid7 FDNS using AWS Athena&S3
 
-Note: u should pay $0.40 for each query to aws athena (it depends to size of rapid7 open data)
+Note: You should pay $0.40 for each query to aws athena (it depends to size of rapid7 open data)
 
 [![asciicast](https://asciinema.org/a/TXXwJ7G1J2bmD4I3OGY7oGUmn.svg)](https://asciinema.org/a/TXXwJ7G1J2bmD4I3OGY7oGUmn)
 
