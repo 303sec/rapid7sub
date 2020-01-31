@@ -17,8 +17,8 @@ Note: u should pay $0.40 for each query to aws athena (it depends to size of rap
     python3 -m pip install -r requirements.txt
 #### How to create Database (Athena)
 Go https://console.aws.amazon.com/athena/home <br>
-Run that query (https://paste.ubuntu.com/p/hGSGgXb2QP/) <br>
 
+Query for getting the database
 ```
 CREATE EXTERNAL TABLE IF NOT EXISTS rapid7_fdns_any (
   `timestamp` timestamp,
