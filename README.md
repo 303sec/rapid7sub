@@ -43,7 +43,7 @@ Then run `msck repair table rapid7_fdns_any` (ofc as query)
 `python3 rapid7sub.py domain.com`
 
 # Contact
-https://twitter.com/mehmetxyele
+https://twitter.com/zeroxyele
 
 ### Thanks to
 Alexey Baikov (sysboss)
